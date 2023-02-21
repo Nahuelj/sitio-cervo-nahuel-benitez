@@ -1041,9 +1041,29 @@ footer{
         padding: 0rem 5rem 3rem 5rem;
     }
 }
+
+.barra-cta-construccion{
+    background-image:linear-gradient(
+        rgba(5, 7, 12, 0.5),
+        rgba(5, 7, 12, 0.5)),
+        url(../img/adoquines.jpeg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
 /* FINAL PAGINA CONSTRUCCION */
 /* INICIO PAGINA COMPLEMETOS */
 .banner-complementos{
+    background-image:linear-gradient(
+        rgba(5, 7, 12, 0.5),
+        rgba(5, 7, 12, 0.5)),
+        url(../img/paneles.jpeg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.barra-cta-complementos{
     background-image:linear-gradient(
         rgba(5, 7, 12, 0.5),
         rgba(5, 7, 12, 0.5)),
