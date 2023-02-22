@@ -13,7 +13,6 @@
     margin: 0;
     padding: 0;
     font-family: var(--fuente);
-    overflow-x:hidden;
 }
 
 
@@ -98,8 +97,8 @@
     background-size: cover;
     background-attachment: fixed;
     margin-bottom: 2rem;
-
 }
+
 .titulo-banner{
     font-size: 3rem;
     padding: 1rem;
@@ -1225,6 +1224,19 @@ textarea{
         margin: 0;
     }
 }
-
-
 /* FINAL CONTACTO*/
+/* ULTIMOS RETOQUES DE MEDIAQUERYES */
+@media (max-width:380px){
+    .titulo-banner{
+        font-size: 2rem;
+    }
+    .subtitulo-banner{
+        font-size: 1.5rem;
+    }
+    .correo-empresa{
+        font-size: 1rem;
+    }
+    .telefonos-footer{
+        gap:.3rem;
+    }
+}
