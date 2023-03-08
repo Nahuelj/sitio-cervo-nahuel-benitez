@@ -1,0 +1,161 @@
+@import "variables";
+@import "mixin-func";
+
+// BARRA NAV-MOBILE
+
+.container-nav-mobile {
+    position: sticky;
+    top: 0;
+    background-color: $oscuro;
+    z-index: 100;
+
+    .nav-mobile {
+        background-color: $oscuro;
+        width: 95vw;
+    }
+
+    .logo-nav {
+        @include flex-center(row);
+        gap: 5px;
+
+        .texto-de-logo {
+            @include flex-center(column);
+            align-items: flex-start;
+
+            .titulo-logo-movil {
+                font-size: 1.2rem;
+                color: $blanco;
+                text-transform: capitalize;
+            }
+
+            .subtitulo-logo-movil {
+                @extend .titulo-logo-movil;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    a.nav-link {
+        color: $blanco;
+        border-bottom: 1px solid $separadores;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar-toggler {
+        background-color: $amarillo;
+    }
+}
+
+.primera-nav {
+    display: none;
+}
+
+.nav-desktop {
+    display: none;
+}
+
+// BARRA NAV-DESKTOP
+
+.container-nav-mobile {
+    @include desktop-small {
+        display: none;
+    }
+    
+}
+
+.primera-nav {
+    @include desktop-small {
+        display: initial;
+        @include flex-center(row);
+        justify-content: space-evenly;
+        background-color: $oscuro;
+    }
+
+    a.logo-nav {
+        @include flex-center(row);
+        width: min-content;
+        gap: 5px;
+        text-decoration: none;
+        background-color: $oscuro;
+        
+        h2{
+            color: $blanco;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+        }
+        h3{
+            @extend h2; 
+            font-size: 1.3rem;
+        }
+
+        .logo-cervo {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    .datos-contacto{
+        @include flex-center(row);
+        gap: 50px;
+        color: $blanco;
+        text-transform: capitalize;
+        
+        .contacto-nav{
+            @include flex-center(row);
+            gap: 10px;
+            
+            h4{
+                font-size: 1.2rem;
+            }
+        }
+
+        .redes-nav{
+            @include flex-center(row);
+            gap: 10px;
+
+            a{
+                text-decoration: none;
+            }
+            .logo-redes{
+                width: 45px;
+            }
+        }
+    }
+}
+
+.nav-desktop {
+    @include desktop-small {
+        display: initial;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        padding: 0;
+        margin: 0;
+}
+    ul{
+        @include flex-center(row);
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: $oscuro;
+        height: 45px;
+        border-top: 2px solid $separadores;
+        border-bottom: 2px solid $separadores;
+        padding: 0;
+        margin: 0;
+
+        li{
+            a{
+                text-decoration: none;
+                color: $blanco;
+                font-size: 1.3rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

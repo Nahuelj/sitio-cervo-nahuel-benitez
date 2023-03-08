@@ -1,0 +1,29 @@
+@mixin flex-center($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+// MEDIA QUERIES
+
+@mixin tablet{
+    @media (min-width: 481px) {
+        @content;
+    }
+}
+
+@mixin desktop-small {
+    @media (min-width: 769px) {
+        @content;
+    }
+}
+
+@mixin desktop-m{
+    @media (min-width: 1025px) {
+        
+    }
+}
+
+
