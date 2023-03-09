@@ -1,0 +1,51 @@
+@import "variables",
+"mixins-func";
+
+
+.banner-complementos {
+	background-image: linear-gradient( rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/paneles.jpeg);
+	background-position: 50% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.barra-cta-complementos {
+	background-image: linear-gradient( rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/paneles.jpeg);
+	background-position: 50% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.ejemplo-complementos {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	gap: 2rem;
+	margin-bottom: 2rem;
+
+    @include desktop-small {
+        display: flex;
+        flex-direction: row;
+        gap:2rem;
+        margin-bottom: 2rem;
+    }
+
+	div {
+		h4 {
+			text-align: center;
+			font-size: 1rem;
+			font-weight: 400;
+			padding: .3rem;
+			margin-top: 1rem;
+		}
+	}
+}
+.img-ej-complemento {
+	width: 380px;
+	border-radius: 15px;
+
+    @include desktop-small {
+        width: 230px;
+        height: 200px;
+    }
+}

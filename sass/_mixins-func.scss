@@ -1,5 +1,20 @@
 @import "variables";
 
+
+
+//FLEX
+
+
+@mixin flex ($dir, $sep){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap:$sep;
+}
+
+
 // MIXINS MEDIA QUERIES
 
 @mixin mobile-sm {
