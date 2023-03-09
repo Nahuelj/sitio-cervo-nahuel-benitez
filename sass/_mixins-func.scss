@@ -1,0 +1,25 @@
+@import "variables";
+
+@mixin mobile-sm {
+    @media (max-width: 366px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 481px) {
+        @content;
+    }
+}
+
+@mixin deskopt-small {
+    @media (min-width: 769px) {
+        @content;
+    }
+}
+
+@mixin deskopt {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
