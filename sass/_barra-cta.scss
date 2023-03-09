@@ -1,0 +1,27 @@
+@import "variables",
+"mixins-func";
+
+.barra-cta{
+    @include barra-cta(url(../img/armado-hierro.jpeg));
+    flex-direction: column;
+    .flecha-cta{
+        width: 50px;
+        transform: rotate(90deg) ;
+    }
+    @include desktop-small{
+        flex-direction: row;
+        .flecha-cta{
+            width: 70px;
+            transform: none;
+        }
+        .boton-banner:hover {
+            cursor: pointer;
+            background-color: $oscuro;
+            color: white;
+            transition: all .2s linear;
+        }
+    }
+}
+
+
+

@@ -1,4 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Zeyada&display=swap");
+.banner {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/inicio.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.titulo-banner {
+  font-size: 3rem;
+  padding: 1rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: #f5f5f5;
+}
+@media (max-width: 366px) {
+  .titulo-banner {
+    font-size: 2rem;
+  }
+}
+
+.subtitulo-banner {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f5f5f5;
+  text-transform: capitalize;
+}
+
+.a-boton {
+  width: min-content;
+  height: min-content;
+}
+
+.boton-banner {
+  padding: 10px 35px;
+  margin: 15px 0px;
+  text-transform: capitalize;
+  background-color: #f5f5f5;
+  border: 2px solid #303841;
+  color: #303841;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 769px) {
+  .banner {
+    height: calc(100vh - 150px);
+  }
+  .banner .boton-banner:hover {
+    cursor: pointer;
+    background-color: #303841;
+    color: white;
+    transition: all 0.2s linear;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -248,6 +311,279 @@ nav a {
     display: initial;
     display: flex;
     flex-direction: row;
+  }
+}
+
+footer {
+  background-color: #fff200;
+}
+
+.primer-footer {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  align-items: center;
+  align-content: center;
+  padding: 2rem;
+  padding-bottom: 0;
+  gap: 30px;
+}
+
+.info-footer {
+  width: 80vw;
+}
+
+.container-contacto-footer {
+  border: none;
+  padding-bottom: 0;
+}
+
+.logo-negro-footer {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+.logo-negro-footer h2 {
+  color: #303841;
+}
+.logo-negro-footer h3 {
+  color: #303841;
+}
+
+.logo-footer {
+  color: #303841;
+}
+
+.mapa {
+  display: none;
+}
+
+.telefonos-footer {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.titulo-info-footer {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.contenido-info {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: none;
+  text-align: center;
+}
+
+.logo-llamadas {
+  width: 50px;
+}
+
+.segundo-footer {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  padding: 1rem;
+  margin: 0rem 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.312);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.312);
+}
+
+.logo-redes-footer {
+  width: 45px;
+  height: 45px;
+}
+
+.correo-empresa {
+  font-size: 1rem;
+}
+
+.njb {
+  display: flex;
+  padding: 1rem;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: #f5f5f5;
+  gap: 1rem;
+}
+
+.logo-personal {
+  width: 150px;
+  height: 100px;
+}
+
+.flecha-footer-personal {
+  width: 50px;
+}
+
+.p-footer-personal-lg {
+  display: none;
+}
+
+.p-footer-personal-sm {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 769px) {
+  footer .primer-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 30vh;
+  }
+  footer .info-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border: none;
+  }
+  footer .info-footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  footer .item-mapa {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+  }
+  footer .mapa-del-sitio {
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    text-align: center;
+  }
+  footer .mapa-del-sitio:hover {
+    transform: scale(1.05);
+  }
+  footer .mapa-del-sitio:hover a::after {
+    transform: scale(1);
+    transform-origin: left right;
+  }
+  footer .mapa-del-sitio a:hover {
+    font-weight: 450;
+    transition: all 1s ease-out;
+  }
+  footer .mapa-del-sitio a::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1.7px;
+    background-color: black;
+    left: 0;
+    bottom: 0px;
+    transform: scale(0);
+    transition: transform 0.2s ease-out;
+  }
+  footer .titulo-info-footer {
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  footer .contenido-info {
+    font-weight: 400;
+  }
+  footer .segundo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    padding: 1rem;
+    border-top: 1px solid #303841;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+  }
+  footer .logo-redes-footer {
+    height: 40px;
+    width: 40px;
+  }
+  footer .logo-footer h2 {
+    color: black;
+  }
+  footer .logo-footer h3 {
+    color: black;
+  }
+  footer .telefonos-footer {
+    margin: 0;
+    gap: 5px;
+  }
+  footer .correo-empresa {
+    margin: 0;
+  }
+  footer .njb {
+    height: 12vh;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1025px) {
+  footer .mapa {
+    display: initial;
+  }
+}
+
+.barra-cta {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/armado-hierro.jpeg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  flex-direction: column;
+}
+.barra-cta .flecha-cta {
+  width: 50px;
+  transform: rotate(90deg);
+}
+@media (min-width: 769px) {
+  .barra-cta {
+    flex-direction: row;
+  }
+  .barra-cta .flecha-cta {
+    width: 70px;
+    transform: none;
+  }
+  .barra-cta .boton-banner:hover {
+    cursor: pointer;
+    background-color: #303841;
+    color: white;
+    transition: all 0.2s linear;
   }
 }
 

@@ -1,5 +1,7 @@
 @import "variables";
 
+// MIXINS MEDIA QUERIES
+
 @mixin mobile-sm {
     @media (max-width: 366px) {
         @content;
@@ -12,14 +14,57 @@
     }
 }
 
-@mixin deskopt-small {
+@mixin desktop-small {
     @media (min-width: 769px) {
         @content;
     }
 }
 
-@mixin deskopt {
+@mixin desktop {
     @media (min-width: 1025px) {
         @content;
     }
 }
+
+// FINAL MEDIA QUERIES
+
+// BANNER
+
+
+@mixin banner ($url) {
+	padding: 2rem 0rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	gap: 10px;
+	background-image: linear-gradient( rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), $url;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+// FINAL BANNER
+
+// BARRA CTA
+
+@mixin barra-cta ($url){
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-image:linear-gradient(
+        rgba(5, 7, 12, 0.5),
+        rgba(5, 7, 12, 0.5)),
+        $url;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+// FINA BARRA CTA

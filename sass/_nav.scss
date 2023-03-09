@@ -241,20 +241,20 @@ nav {
 }
 
 .nav-mobile{
-    @include deskopt-small{
+    @include desktop-small{
         display: none;
     }
 }
 
 .primera-nav{
-    @include deskopt-small{
+    @include desktop-small{
         display: initial;
         display: flex;
     }
 }
 
 .segunda-nav{
-    @include deskopt-small{
+    @include desktop-small{
         display: initial;
         display: flex;
         flex-direction: row;
