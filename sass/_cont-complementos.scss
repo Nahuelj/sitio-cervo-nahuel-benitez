@@ -41,11 +41,35 @@
 	}
 }
 .img-ej-complemento {
-	width: 380px;
+	width: 300px;
 	border-radius: 15px;
 
     @include desktop-small {
         width: 230px;
         height: 200px;
     }
+}
+
+.info-complementos{
+	.encabezado{
+		width: 90vw;
+	}
+}
+
+.sobre-complementos{
+	.encabezado{
+		margin: 2rem 1rem;
+		@include desktop {
+			width: 50vw;
+			margin: 2rem auto;
+		}
+	}
+	.parrafo{
+		margin: 2rem 1rem;
+		@include desktop {
+			width: 50vw;
+			margin: 2rem auto;
+		}
+
+	}
 }

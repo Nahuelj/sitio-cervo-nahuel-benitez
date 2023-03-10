@@ -5,14 +5,16 @@
 
 .sobre-nosotros {
 	padding: 2rem;
-    @include desktop-small {
-        @include flex (row, 40px);
-    }
 }
 .info-sobre-nosotros {
-	padding-bottom: 2rem;
-	border-bottom: 2px solid $separador;
-	margin-bottom: 2rem;
+	
+	margin: auto;
+	padding: 2rem 0rem;
+	@include desktop-small {
+		
+        width: 70vw;
+		justify-content: flex-start;
+    }
 }
 .encabezado {
 	font-size: 1.8rem;
@@ -53,7 +55,6 @@
     @include desktop-small {
         @include flex(row, 30px);
     }
-    
 }
 
 .contenedor-tarjetas {
@@ -72,6 +73,14 @@
 .img-tarjeta {
 	border-radius: 10px 10px 0px 0px;
 	width: 280px;
+	@include desktop-small{
+		width: 230px;
+		height: 200px;
+	}
+	@include desktop{
+		width: 280px;
+		
+	}
 }
 .boton-card {
 	width: 150px;
@@ -100,7 +109,6 @@
 .objetivo {
 	margin-top: 2rem;
 	padding-top: 2rem;
-	border-top: 2px solid $separador;
     @include flex (column, 30px);
 }
 .logo-idea {
@@ -121,6 +129,27 @@
 }
 .info-sobre-objetivo {
 	margin-bottom: 0rem;
+	padding: 0;
+	text-align: center;
+}
+.items{
+
+	@include desktop{
+		display: flex;
+		gap: 20px;
+	}
+	.texto{
+		@include desktop-small {
+			width: 450px;
+		}
+
+		@include desktop {
+			width: 300px;
+		}
+
+		@include flex(column, 10px);
+		text-align: center;
+	}
 }
 .contenedor-items {
 	display: flex;

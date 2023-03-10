@@ -10,7 +10,7 @@
 }
 .sobre-los-planos {
 	padding: 1rem;
-	margin: auto;
+	margin:2rem 2rem;
 }
 .info-sobre-los-planos {
 	.encabezado {
@@ -19,20 +19,32 @@
 	}
 	p {
 		text-align: center;
+		@include desktop {
+			width: 750px;
+			margin: auto;
+		}
 	}
 }
 .pasos {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
 	gap: 2rem;
-	padding-bottom: 2rem;
 	border-bottom: 1px solid var(--separador);
+	margin: auto;
 	margin-bottom: 2rem;
+	@include tablet {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+	@include desktop-small {
+		width: 700px;
+	}
 }
 .contenedor-pasos {
 	text-transform: capitalize;
 	text-align: center;
+	
 	img {
 		margin-bottom: 1rem;
 		width: 50px;
@@ -58,3 +70,4 @@
 	background-size: cover;
 	background-attachment: fixed;
 }
+

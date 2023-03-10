@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 2rem;
+
 
     @include desktop-small {
         flex-direction: row;
@@ -21,17 +21,20 @@
     }
 
     .info-contacto {
-        width: 40vw;
+        width: 90vw;
+        padding: 2rem;
+        @include desktop-small{ 
+            width: 50vw ;
+        }
     }
 
     .form {
-        width: 40vw;
-
+        width: 100vw;
+        @include tablet {
+            width: 450px;
+        }
     }
 
-    .flecha-negra {
-        transform: rotate(-90deg);
-    }
 
     .indicacion {
         flex-direction: row;
@@ -52,6 +55,7 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    
 
     img {
         width: 50px;
@@ -60,9 +64,9 @@ h4 {
 }
 
 .titulo-contacto {
-    padding-bottom: 1rem;
     border-bottom: 1px solid $separador;
     text-align: center;
+    
 }
 
 .redes-contacto {
@@ -74,6 +78,7 @@ h4 {
     display: flex;
     gap: .5rem;
     padding-bottom: 1rem;
+    
 }
 
 .contenedor-redes {
@@ -102,6 +107,7 @@ h4 {
 }
 
 .telefono {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +122,8 @@ form {
     padding: 1rem;
     background-color: $oscuro;
     border-radius: 10px;
-    color: $color_1;
+    color: $claro;
+    margin: 2rem 1rem;
 }
 
 input {
@@ -131,4 +138,11 @@ input {
 
 textarea {
     border-radius: 5px;
+}
+
+.flecha-contacto{
+    @include desktop-small {
+        transform: rotate(-90deg);
+    }
+    
 }
