@@ -558,7 +558,7 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/armado-hierro.jpeg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/armado-hierro.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -580,6 +580,41 @@ footer {
     transform: none;
   }
   .barra-cta .boton-banner:hover {
+    cursor: pointer;
+    background-color: #303841;
+    color: white;
+    transition: all 0.2s linear;
+  }
+}
+
+.barra-cta-planos {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/decorartion-planos.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  flex-direction: column;
+}
+.barra-cta-planos .flecha-cta {
+  width: 50px;
+  transform: rotate(90deg);
+}
+@media (min-width: 769px) {
+  .barra-cta-planos {
+    flex-direction: row;
+  }
+  .barra-cta-planos .flecha-cta {
+    width: 70px;
+    transform: none;
+  }
+  .barra-cta-planos .boton-banner:hover {
     cursor: pointer;
     background-color: #303841;
     color: white;
@@ -809,7 +844,7 @@ footer {
 
 /* final objetivo */
 .banner-complementos {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/paneles.jpeg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/paneles.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -886,7 +921,7 @@ footer {
 }
 
 .banner-construccion {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/hierro.jpeg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/hierro.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -1007,7 +1042,7 @@ footer {
 }
 
 .barra-cta-planos {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/decorartion-planos.jpeg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/decorartion-planos.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -1069,6 +1104,8 @@ h4 {
 }
 
 .titulo-contacto {
+  font-weight: 700;
+  padding-bottom: 1rem;
   border-bottom: 1px solid rgba(214, 230, 242, 0.6039215686);
   text-align: center;
 }
@@ -1116,6 +1153,9 @@ h4 {
   justify-content: center;
   align-content: center;
   border-bottom: 1px solid rgba(214, 230, 242, 0.6039215686);
+}
+.telefono p {
+  font-weight: 500;
 }
 
 form {
