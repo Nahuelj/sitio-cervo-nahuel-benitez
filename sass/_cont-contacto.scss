@@ -9,6 +9,9 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    background-color: $gris;
+    gap: 1rem;
+    padding: 2rem 0 0 0 ;
 
 
     @include desktop-small {
@@ -16,24 +19,11 @@
         justify-content: center;
         align-items: center;
         align-content: center;
-        gap: 5vw;
-
+        padding: 2rem 2rem 0rem 2rem;
+        gap: 2rem;
     }
 
-    .info-contacto {
-        width: 90vw;
-        padding: 2rem;
-        @include desktop-small{ 
-            width: 50vw ;
-        }
-    }
 
-    .form {
-        width: 100vw;
-        @include tablet {
-            width: 450px;
-        }
-    }
 
 
     .indicacion {
@@ -55,11 +45,24 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.414);
+    border: 1px solid black;
+    width: 90vw;
+    max-width: 400px;
+         @include desktop-small {
+            height: 434.4px;
+         }
 
     img {
         width: 50px;
         height: 50px;
+    }
+
+    p{
+        text-align: center;
     }
 }
 
@@ -103,10 +106,6 @@ h4 {
     margin-top: 1rem;
 }
 
-.flecha-negra {
-    width: 50px;
-    height: 50px;
-}
 
 .telefono {
     
@@ -122,33 +121,111 @@ h4 {
     }
 }
 
+
+// FORM
+
+$color_1: grey;
+$color_2: blue;
+$color_3: white;
+$background-color_1: blue;
+
 form {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	border: 1px solid black;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.414);
+	border-radius: 10px;
+    background-color: white;
+    width: 90vw;
+    max-width: 400px;
+}
+
+.contenedor-form{
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    background-color: $oscuro;
-    border-radius: 10px;
-    color: $claro;
-    margin: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
 }
 
 input {
-    margin-bottom: .5rem;
-    border-radius: 5px;
+	width: 100%;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid black;
+	padding: 5px;
+	font-size: 1.1rem;
+	&:focus {
+		~ {
+			label {
+				transform: translateY(-15px) scale(.85);
+				transform-origin: top left;
+				transition: .2s;
+			}
+		}
+	}
+	&:not(:placeholder-shown) {
+		~ {
+			label {
+				transform: translateY(-15px) scale(.85);
+				transform-origin: top left;
+				color: $color_2;
+			}
+		}
+		border-bottom: 2px solid blue;
+	}
+}
+.form_group {
+	position: relative;
+	margin: 1.2rem;
+}
+label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	color: $color_1;
+	font-size: 1.1rem;
+}
+.button-submit {
+	padding: .8rem 1.5rem;
+	border: none;
+	margin: 1rem auto 0 auto;
+	border-radius: 5px;
+	font-size: 1.1rem;
+	color: $color_3;
+    background-color: green;
+	&:hover {
+		transform: scale(1.1);
+		transition: .2s;
+	}
+	&:active {
+		opacity: .8;
+	}
+}
+@media (max-width:450px) {
+	form {
+		padding: 2rem .5rem;
+	}
+	input {
+		font-size: 1rem;
+	}
 }
 
-.boton-enviar {
-    font-weight: 600;
-    width: 100%;
+.contenedor-encabezado-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
 }
 
-textarea {
-    border-radius: 5px;
-}
-
-.flecha-contacto{
-    @include desktop-small {
-        transform: rotate(-90deg);
+.banner-contacto{
+    @include banner(url(../img/fondo-contacto.jpg));
+    height: 400px;
+    @include desktop-small{
+        height: calc(100vh - 150px);
     }
-    
 }
+
+
