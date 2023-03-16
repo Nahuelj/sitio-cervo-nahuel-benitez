@@ -185,6 +185,12 @@
 	border-top: hidden;
 }
 
+.boton-card:hover {
+	cursor: pointer;
+	background-color: #303841;
+	color: white;
+	transition: all 0.2s linear;
+  }
 
 
 /* final objetivo */

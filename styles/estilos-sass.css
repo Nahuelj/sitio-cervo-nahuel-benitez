@@ -50,6 +50,20 @@
   font-weight: 500;
 }
 
+.boton-banner:hover {
+  cursor: pointer;
+  background-color: #303841;
+  color: white;
+  transition: all 0.2s linear;
+}
+
+.boton-card:hover {
+  cursor: pointer;
+  background-color: #303841;
+  color: white;
+  transition: all 0.2s linear;
+}
+
 @media (min-width: 769px) {
   .banner {
     height: calc(100vh - 150px);
@@ -842,6 +856,13 @@ footer {
   border-top: hidden;
 }
 
+.boton-card:hover {
+  cursor: pointer;
+  background-color: #303841;
+  color: white;
+  transition: all 0.2s linear;
+}
+
 /* final objetivo */
 .banner-complementos {
   background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/paneles.jpg);
@@ -1054,6 +1075,9 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
+  background-color: #d6e6f2;
+  gap: 1rem;
+  padding: 2rem 0 0 0;
 }
 @media (min-width: 769px) {
   .contacto {
@@ -1061,24 +1085,8 @@ footer {
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 5vw;
-  }
-}
-.contacto .info-contacto {
-  width: 90vw;
-  padding: 2rem;
-}
-@media (min-width: 769px) {
-  .contacto .info-contacto {
-    width: 50vw;
-  }
-}
-.contacto .form {
-  width: 100vw;
-}
-@media (min-width: 481px) {
-  .contacto .form {
-    width: 450px;
+    padding: 2rem 2rem 0rem 2rem;
+    gap: 2rem;
   }
 }
 .contacto .indicacion {
@@ -1097,10 +1105,25 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.414);
+  border: 1px solid black;
+  width: 90vw;
+  max-width: 400px;
+}
+@media (min-width: 769px) {
+  .info-contacto {
+    height: 434.4px;
+  }
 }
 .info-contacto img {
   width: 50px;
   height: 50px;
+}
+.info-contacto p {
+  text-align: center;
 }
 
 .titulo-contacto {
@@ -1141,11 +1164,6 @@ h4 {
   margin-top: 1rem;
 }
 
-.flecha-negra {
-  width: 50px;
-  height: 50px;
-}
-
 .telefono {
   display: flex;
   flex-direction: column;
@@ -1161,30 +1179,108 @@ h4 {
 form {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  background-color: #303841;
+  padding: 2rem;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.414);
   border-radius: 10px;
-  color: #f5f5f5;
-  margin: 2rem 1rem;
+  background-color: white;
+  width: 90vw;
+  max-width: 400px;
+}
+
+.contenedor-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
 }
 
 input {
-  margin-bottom: 0.5rem;
-  border-radius: 5px;
-}
-
-.boton-enviar {
-  font-weight: 600;
   width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  font-size: 1.1rem;
+}
+input:focus ~ label {
+  transform: translateY(-15px) scale(0.85);
+  transform-origin: top left;
+  transition: 0.2s;
+}
+input:not(:placeholder-shown) {
+  border-bottom: 2px solid blue;
+}
+input:not(:placeholder-shown) ~ label {
+  transform: translateY(-15px) scale(0.85);
+  transform-origin: top left;
+  color: blue;
 }
 
-textarea {
+.form_group {
+  position: relative;
+  margin: 1.2rem;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  color: grey;
+  font-size: 1.1rem;
+}
+
+.button-submit {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  margin: 1rem auto 0 auto;
   border-radius: 5px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: green;
+}
+.button-submit:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.button-submit:active {
+  opacity: 0.8;
 }
 
+@media (max-width: 450px) {
+  form {
+    padding: 2rem 0.5rem;
+  }
+  input {
+    font-size: 1rem;
+  }
+}
+.contenedor-encabezado-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.banner-contacto {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/fondo-contacto.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
 @media (min-width: 769px) {
-  .flecha-contacto {
-    transform: rotate(-90deg);
+  .banner-contacto {
+    height: calc(100vh - 150px);
   }
 }
 
