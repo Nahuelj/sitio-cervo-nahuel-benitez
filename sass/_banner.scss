@@ -2,7 +2,10 @@
 "mixins-func";
 
 .banner {
-    @include banner (url(../img/inicio.jpg));
+    @include banner (url(../img/inicio-mobile.jpg));
+    @include desktop-small {
+        background-image: linear-gradient( rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/inicio.jpg);
+    }
 }
 
 .titulo-banner {
@@ -67,4 +70,5 @@
         }
     }
 }
+
 

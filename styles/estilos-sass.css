@@ -7,10 +7,15 @@
   text-align: center;
   justify-content: center;
   gap: 10px;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/inicio.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/inicio-mobile.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
+}
+@media (min-width: 769px) {
+  .banner {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/inicio.jpg);
+  }
 }
 
 .titulo-banner {
@@ -865,10 +870,15 @@ footer {
 
 /* final objetivo */
 .banner-complementos {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/paneles.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/paneles-mobile.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
+}
+@media (min-width: 769px) {
+  .banner-complementos {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/paneles.jpg);
+  }
 }
 
 .barra-cta-complementos {
@@ -942,10 +952,15 @@ footer {
 }
 
 .banner-construccion {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/hierro.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/hierro-mobile.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
+}
+@media (min-width: 769px) {
+  .banner-construccion {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/hierro.jpg);
+  }
 }
 
 .acordeon {
@@ -992,10 +1007,15 @@ footer {
 }
 
 .banner-planos {
-  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/planos-servicios.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/planos-mobile.jpg);
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
+}
+@media (min-width: 769px) {
+  .banner-planos {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/planos-servicios.jpg);
+  }
 }
 
 .sobre-los-planos {

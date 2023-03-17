@@ -3,10 +3,13 @@
 
 
 .banner-planos {
-	background-image: linear-gradient( rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/planos-servicios.jpg);
+	background-image: linear-gradient( rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/planos-mobile.jpg);
 	background-position: 50% 50%;
 	background-size: cover;
 	background-attachment: fixed;
+	@include desktop-small {
+        background-image: linear-gradient( rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/planos-servicios.jpg);
+    }
 }
 .sobre-los-planos {
 	padding: 1rem;
