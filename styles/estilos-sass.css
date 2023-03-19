@@ -1222,15 +1222,16 @@ footer {
   align-content: center;
   background-color: #d6e6f2;
   gap: 1rem;
-  padding: 2rem 0 0 0;
+  padding-top: 2rem;
 }
 @media (min-width: 769px) {
   .contacto {
+    height: calc(100vh - 150px);
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 2rem 2rem 0rem 2rem;
+    padding: 0rem 2rem 0rem 2rem;
     gap: 2rem;
   }
 }
@@ -1427,6 +1428,10 @@ label {
   .banner-contacto {
     height: calc(100vh - 150px);
   }
+}
+
+.section-contacto-x {
+  display: none;
 }
 
 /*# sourceMappingURL=estilos-sass.css.map */
