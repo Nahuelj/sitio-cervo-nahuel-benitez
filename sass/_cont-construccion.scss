@@ -12,6 +12,18 @@
 	@include desktop-small {
 		background-image: linear-gradient( rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), (url(../img/hierro.jpg));
 	}
+	.titulo-contruccion{
+		font-size: 3rem;
+
+		@media (max-width:421px) {
+			font-size: 2.5rem;
+		}
+
+		@media (max-width:360px) {
+			font-size: 2rem;
+		}
+	}
+
 }
 .acordeon {
 	margin-bottom: 3rem;
@@ -58,4 +70,16 @@
 
 .accordion-body{
 	font-size: 1.3rem;
+}
+.nav-mobile {
+	background-color: $oscuro;
+	position: fixed;
+	
+}
+.navbar {
+	padding: 0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.437);
 }
