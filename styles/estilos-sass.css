@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Zeyada&display=swap");
 .banner {
   padding: 2rem 0rem;
@@ -125,7 +126,7 @@
   margin: 0;
 }
 
-.logo-cervo {
+.logo-cervo-mobile {
   width: 80px;
   height: 80px;
 }
@@ -657,11 +658,11 @@ footer {
   }
 }
 
-.encabezado {
+.encabezado, .diseño3d .descripcion-diseño h3 {
   font-size: 1.8rem;
 }
 
-.parrafo {
+.parrafo, .diseño3d .descripcion-diseño p {
   font-size: 1.3rem;
 }
 
@@ -905,10 +906,16 @@ footer {
     margin-bottom: 2rem;
   }
 }
-.ejemplo-complementos div h4 {
+.ejemplo-complementos .div-card {
+  background-color: #303841;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+.ejemplo-complementos .div-card h4 {
   text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 500;
   padding: 0.3rem;
   margin-top: 1rem;
 }
@@ -924,24 +931,24 @@ footer {
   }
 }
 
-.info-complementos .encabezado {
+.info-complementos .encabezado, .info-complementos .diseño3d .descripcion-diseño h3, .diseño3d .descripcion-diseño .info-complementos h3 {
   width: 90vw;
 }
 
-.sobre-complementos .encabezado {
+.sobre-complementos .encabezado, .sobre-complementos .diseño3d .descripcion-diseño h3, .diseño3d .descripcion-diseño .sobre-complementos h3 {
   margin: 2rem 1rem;
 }
 @media (min-width: 1025px) {
-  .sobre-complementos .encabezado {
+  .sobre-complementos .encabezado, .sobre-complementos .diseño3d .descripcion-diseño h3, .diseño3d .descripcion-diseño .sobre-complementos h3 {
     width: 50vw;
     margin: 2rem auto;
   }
 }
-.sobre-complementos .parrafo {
+.sobre-complementos .parrafo, .sobre-complementos .diseño3d .descripcion-diseño p, .diseño3d .descripcion-diseño .sobre-complementos p {
   margin: 2rem 1rem;
 }
 @media (min-width: 1025px) {
-  .sobre-complementos .parrafo {
+  .sobre-complementos .parrafo, .sobre-complementos .diseño3d .descripcion-diseño p, .diseño3d .descripcion-diseño .sobre-complementos p {
     width: 50vw;
     margin: 2rem auto;
   }
@@ -1002,6 +1009,14 @@ footer {
   height: 60px;
 }
 
+.container-accordion {
+  max-width: 900px;
+}
+
+.accordion {
+  max-width: 900px;
+}
+
 .accordion-body {
   font-size: 1.3rem;
 }
@@ -1023,7 +1038,7 @@ footer {
   margin: 2rem 2rem;
 }
 
-.info-sobre-los-planos .encabezado {
+.info-sobre-los-planos .encabezado, .info-sobre-los-planos .diseño3d .descripcion-diseño h3, .diseño3d .descripcion-diseño .info-sobre-los-planos h3 {
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -1073,7 +1088,7 @@ footer {
   padding: 2rem;
   margin-top: 4rem;
 }
-.ruta .encabezado {
+.ruta .encabezado, .ruta .diseño3d .descripcion-diseño h3, .diseño3d .descripcion-diseño .ruta h3 {
   margin-bottom: 2rem;
   text-align: center;
   color: white;
@@ -1095,11 +1110,12 @@ footer {
 
 .tarjeta-pasos {
   background-color: #f5f5f5;
+  width: 95vw;
   max-width: 650px;
   border: 2px solid;
   border-radius: 15px;
   margin: 1rem 0;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.441);
   display: flex;
   flex-direction: column;
@@ -1126,6 +1142,76 @@ footer {
     flex-wrap: wrap;
     gap: 1rem;
   }
+}
+
+.diseño3d {
+  padding: 2rem 1rem 1rem 1rem;
+  margin: 2rem 0rem;
+  border-top: 1px solid rgba(214, 230, 242, 0.6039215686);
+}
+.diseño3d .descripcion-diseño {
+  margin: auto auto 4rem auto;
+  max-width: 600px;
+}
+.diseño3d .contenedor-targ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .diseño3d .contenedor-targ {
+    flex-direction: row;
+  }
+}
+.diseño3d .contenedor-targ div {
+  color: white;
+  border: 1px solid;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #303841;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.diseño3d .contenedor-targ div h3 {
+  padding: 1rem;
+}
+@media (min-width: 769px) {
+  .diseño3d .contenedor-targ div h3 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 769px) {
+  .diseño3d .contenedor-targ div {
+    width: 40vw;
+    max-width: 300px;
+    height: 300px;
+    justify-content: space-between;
+  }
+}
+.diseño3d .contenedor-targ img {
+  width: 100%;
+}
+@media (min-width: 769px) {
+  .diseño3d .contenedor-targ img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.boton-pasos {
+  margin: 0;
+  background-color: #303841;
+  color: white;
+  width: max-content;
+}
+.boton-pasos:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s;
 }
 
 .contacto {
