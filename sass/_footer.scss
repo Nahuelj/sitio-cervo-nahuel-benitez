@@ -44,8 +44,12 @@ footer {
 }
 .logo-footer {
 	color: $oscuro;
-
+	margin-left: 10px !important;
+	margin-bottom: 0px !important;
     
+}
+.logo-cervo-footer{
+	margin: 0;
 }
 .mapa {
 	display: none;
@@ -220,6 +224,7 @@ footer{
 .logo-footer {
 	h2 {
 		color: black;
+		margin-bottom: 0;
 	}
 	h3 {
 		color: black;

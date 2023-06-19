@@ -72,7 +72,7 @@
 
 @media (min-width: 769px) {
   .banner {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 130px);
   }
   .banner .boton-banner:hover {
     cursor: pointer;
@@ -119,10 +119,11 @@
 .logo-nav {
   display: flex;
   text-decoration: none;
-  gap: 0.2rem;
   color: #f5f5f5;
   text-transform: capitalize;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   margin: 0;
 }
 
@@ -207,8 +208,9 @@ nav a {
 }
 
 .logo-cervo {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 80px;
+  margin-top: 10px;
 }
 
 .logo-llamadas {
@@ -253,8 +255,10 @@ nav a {
   border-bottom: solid 2px rgba(214, 230, 242, 0.6039215686);
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   list-style: none;
   margin: 0;
+  height: 40px;
 }
 
 .opcion-nav {
@@ -274,10 +278,11 @@ nav a {
   display: block;
   position: absolute;
   width: 100%;
-  height: 1.7px;
+  height: 1px;
+  border: none;
   background-color: #fff200;
   left: 0;
-  bottom: 7px;
+  bottom: 11px;
   transform: scale(0);
   transition: transform 0.2s ease-out;
 }
@@ -374,6 +379,12 @@ footer {
 
 .logo-footer {
   color: #303841;
+  margin-left: 10px !important;
+  margin-bottom: 0px !important;
+}
+
+.logo-cervo-footer {
+  margin: 0;
 }
 
 .mapa {
@@ -541,6 +552,7 @@ footer {
   }
   footer .logo-footer h2 {
     color: black;
+    margin-bottom: 0;
   }
   footer .logo-footer h3 {
     color: black;

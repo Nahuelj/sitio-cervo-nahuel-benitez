@@ -34,10 +34,11 @@
 .logo-nav {
 	display: flex;
 	text-decoration: none;
-	gap: .2rem;
 	color: $claro;
 	text-transform: capitalize;
 	justify-content: center;
+	align-items: center;
+	align-content: center;
     margin: 0;
 }
 .logo-cervo-mobile {
@@ -121,8 +122,9 @@ nav {
 	padding-right: 5px;
 }
 .logo-cervo {
-	width: 100px;
-	height: 100px;
+	width: 85px;
+	height: 80px;
+	margin-top: 10px;
 }
 .logo-llamadas {
 	height: 40px;
@@ -166,8 +168,10 @@ nav {
 	border-bottom: solid 2px $separador;
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 	list-style: none;
 	margin: 0;
+	height: 40px;
 }
 .opcion-nav {
 	text-transform: capitalize;
@@ -187,10 +191,11 @@ nav {
 		display: block;
 		position: absolute;
 		width: 100%;
-		height: 1.7px;
+		height: 1px;
+		border: none;
 		background-color: $amarillo;
 		left: 0;
-		bottom: 7px;
+		bottom: 11px;
 		transform: scale(0);
 		transition: transform .2s ease-out;
 	}
