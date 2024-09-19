@@ -1,74 +1,71 @@
-@import "variables",
-"mixins-func";
+@import "variables", "mixins-func";
 
 .banner {
-    @include banner (url(../img/inicio-mobile.jpg));
-    @include desktop-small {
-        background-image: linear-gradient( rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../img/inicio.jpg);
-    }
+  @include banner(url(../img/inicio-mobile.jpg));
+  @include desktop-small {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+      url(../img/inicio.jpg);
+  }
 }
 
 .titulo-banner {
-    @include mobile-sm{
-        font-size: 2rem;
-    }
-    font-size: 3rem;
-    padding: 1rem;
-    font-weight: 800;
-    text-transform: capitalize;
-    color: $claro;
+  @include mobile-sm {
+    font-size: 2rem;
+  }
+  font-size: 3rem;
+  padding: 1rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: $claro;
 }
 
 .subtitulo-banner {
-    font-size: 2rem;
-    font-weight: 600;
-    color: $claro;
-    text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 600;
+  color: $claro;
+  text-transform: capitalize;
 }
 
 .a-boton {
-    width: min-content;
-    height: min-content;
+  width: min-content;
+  height: min-content;
 }
 
 .boton-banner {
-    padding: 10px 35px;
-    margin: 15px 0px;
-    text-transform: capitalize;
-    background-color: $claro;
-    border: 2px solid $oscuro;
-    color: $oscuro;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 500;
+  padding: 10px 35px;
+  margin: 15px 0px;
+  text-transform: capitalize;
+  background-color: $claro;
+  border: 2px solid $oscuro;
+  color: $oscuro;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
-.boton-banner:hover{
-    cursor: pointer;
-    background-color: $oscuro;
-    color: white;
-    transition: all .2s linear;
+.boton-banner:hover {
+  cursor: pointer;
+  background-color: $oscuro;
+  color: white;
+  transition: all 0.2s linear;
 }
 
-.boton-card:hover{
-    cursor: pointer;
-    background-color: $oscuro;
-    color: white;
-    transition: all .2s linear;
+.boton-card:hover {
+  cursor: pointer;
+  background-color: $oscuro;
+  color: white;
+  transition: all 0.2s linear;
 }
-
 
 .banner {
-    @include desktop-small {
-        height: calc(100vh - 130px);
+  @include desktop-small {
+    height: calc(100vh - 130px);
 
-        .boton-banner:hover {
-            cursor: pointer;
-            background-color: $oscuro;
-            color: white;
-            transition: all .2s linear;
-        }
+    .boton-banner:hover {
+      cursor: pointer;
+      background-color: $oscuro;
+      color: white;
+      transition: all 0.2s linear;
     }
+  }
 }
-
-
